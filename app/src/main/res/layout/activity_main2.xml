@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:eric="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ericlau.realizeviewpager.MainActivity">
+    
+    <com.ericlau.view.ViewPagerIndicator
+        android:id="@+id/id_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="#2b2929"
+        android:orientation="horizontal"
+        eric:visible_tab_count="4">
+        
+
+    </com.ericlau.view.ViewPagerIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/viewpager"></android.support.v4.view.ViewPager>
+    
+</LinearLayout>
